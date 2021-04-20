@@ -1,5 +1,6 @@
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 import 'antd/dist/antd.css';
+import ListaPessoas from './components/ListaPessoas';
 
 const { Header, Content, Footer } = Layout;
 
@@ -16,10 +17,10 @@ function App() {
         </Header>
         <Content style={{ padding: '0 50px' }}>
           <div className="site-layout-content">
-            <p>Conteudo</p>
+            <ListaPessoas />
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>eVaccine - Fullstack Week</Footer>
+        <Footer style={{ textAlign: 'center' }}>eVaccine</Footer>
       </Layout>
     </div>
   );
